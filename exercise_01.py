@@ -20,7 +20,8 @@ if "," in salary_value:
 try:
     salary_value = float(salary_value)
 except ValueError:
-    print("Invalid salary value. Please, insert a valid number, like 1.0 or 1,0")
+    print("""Invalid salary value.
+        Please, insert a valid number, like 1.0 or 1,0""")
 
 
 # 3) Ask the user to type his bonus value
@@ -34,7 +35,8 @@ if "," in bonus_percentage:
 try:
     bonus_percentage = float(bonus_percentage)
 except ValueError:
-    print("Invalid value. Please, insert a valid numeber, like 0.10 or 0.20")
+    print("""Invalid value.
+        Please, insert a valid numeber, like 0.10 or 0.20""")
 
 
 # 4) Calculate the final value bonus
@@ -45,5 +47,5 @@ final_salary_bonus = BONUS + (salary_value * bonus_percentage)
 # 5) Print a message include the user name, salary and bonus
 
 print(
-    f"The user {name_user}, have a final salary with bonus value: {final_salary_bonus}"
-)
+    f"""The user {name_user}, have a final salary
+    with bonus value: {final_salary_bonus}""")
